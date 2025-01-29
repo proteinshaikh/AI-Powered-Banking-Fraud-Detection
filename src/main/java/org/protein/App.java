@@ -17,7 +17,7 @@ public class App {
         fraudDetection.trainModel(trainingData);
 
         // Step 3: Test the model with a new transaction
-        Transaction newTransaction = new Transaction(15000, 0, 0, false); // Test case
+        Transaction newTransaction = new Transaction(100000, 0, 0, false); // Test case
         boolean isFraud = fraudDetection.predictFraud(newTransaction);
 
         // Step 4: Display the result
